@@ -1,16 +1,16 @@
 import 'package:flutter/material.dart';
 
 class BaseButton extends StatelessWidget {
-  BaseButton(
+  const BaseButton(
       {Key? key,
       this.btnColor = const Color.fromARGB(255, 67, 66, 67),
-      this.number = '',
+      this.keyCalculator = '',
       required this.onPress
     })
       : super(key: key);
 
   final Color btnColor;
-  final String number;
+  final String keyCalculator;
   final VoidCallback onPress;
   // Text controller
   //final TextEditingController controller = TextEditingController();
@@ -22,8 +22,8 @@ class BaseButton extends StatelessWidget {
         // Code that creates the basics components of the Button
         child: ElevatedButton(
           onPressed: onPress , /*() => {
-            // Add number to text controller of textField
-            controller.text += number,
+            // Add keyCalculator to text controller of textField
+            controller.text += keyCalculator,
             enterData.text = controller.text
           },*/
           style: ButtonStyle(
@@ -39,7 +39,7 @@ class BaseButton extends StatelessWidget {
             width: 60,
             height: 60,
             child: Center(
-              child: Text(number),
+              child: Text(keyCalculator),
             ),
           ),
         )

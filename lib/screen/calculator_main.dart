@@ -1,4 +1,5 @@
 import 'package:calculator_flutter/butoms/base_button.dart';
+import 'package:calculator_flutter/butoms/numeric_button.dart';
 import 'package:calculator_flutter/butoms/specials_buttons.dart';
 import 'package:flutter/material.dart';
 
@@ -76,7 +77,7 @@ class _CalculatorMainState extends State<CalculatorMain> {
                         fontFamily: 'Orbitron',
                         color: Color.fromARGB(255, 255, 255, 255))),
                   textInputAction: TextInputAction.none,
-                  keyboardType: TextInputType.number,
+                  //keyboardType: TextInputType.,
                   style: const TextStyle(
                       fontSize: 32,
                       fontFamily: 'Orbitron',
@@ -98,29 +99,30 @@ class _CalculatorMainState extends State<CalculatorMain> {
                 SpecialsButtons(operators: '/'),
               ]),
               Row(mainAxisAlignment: MainAxisAlignment.spaceEvenly, children: [
-                BaseButton(number: '7',onPress: () => showCharacters.text += '7'),
-                BaseButton(number: '8', onPress: () => showCharacters.text += '8'),
-                BaseButton(number: '9', onPress: () => showCharacters.text += '9'),
+                BaseButton(keyCalculator: '7',onPress: () => showCharacters.text += '7'),
+                BaseButton(keyCalculator: '8', onPress: () => showCharacters.text += '8'),
+                BaseButton(keyCalculator: '9', onPress: () => showCharacters.text += '9'),
                 SpecialsButtons(operators: '*'),
               ]),
               Row(mainAxisAlignment: MainAxisAlignment.spaceEvenly, children: [
-                BaseButton(number: '4', onPress: () => showCharacters.text += '4'),
-                BaseButton(number: '5', onPress: () => showCharacters.text += '5'),
-                BaseButton(number: '6', onPress: () => showCharacters.text += '6'),
+                BaseButton(keyCalculator: '4', onPress: () => showCharacters.text += '4'),
+                BaseButton(keyCalculator: '5', onPress: () => showCharacters.text += '5'),
+                BaseButton(keyCalculator: '6', onPress: () => showCharacters.text += '6'),
                 SpecialsButtons(
                   operators: '-',
                 ),
               ]),
               Row(mainAxisAlignment: MainAxisAlignment.spaceEvenly, children: [
-                BaseButton(number: '1', onPress: () => showCharacters.text += '1'),
-                BaseButton(number: '2', onPress: () => showCharacters.text += '2'),
-                BaseButton(number: '3', onPress: () => showCharacters.text += '3'),
+                BaseButton(keyCalculator: '1', onPress: () => showCharacters.text = (double.parse('${showCharacters.text}1')).toString()),
+                BaseButton(keyCalculator: '2', onPress: () => showCharacters.text = (double.parse('${showCharacters.text}2')).toString()),
+                BaseButton(keyCalculator: '3', onPress: () => showCharacters.text = (double.parse('${showCharacters.text}3')).toString()),
                 SpecialsButtons(operators: '+'),
               ]),
               Row(mainAxisAlignment: MainAxisAlignment.spaceEvenly, children: [
-                BaseButton(number: '0',onPress: () => showCharacters.text += '0',
-                ),
-                SpecialsButtons(operators: ','),
+                NumericButton(number: '0'),
+                //BaseButton(keyCalculator: '0',onPress: () => showCharacters.text += '0'),
+                BaseButton(keyCalculator: '00', onPress: () => showCharacters.text += '00'),
+                //SpecialsButtons(operators: ','),
                 SpecialsButtons(operators: '.'),
                 SpecialsButtons(operators: '='),
               ]),
