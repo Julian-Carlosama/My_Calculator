@@ -39,7 +39,7 @@ class BaseButton extends StatelessWidget {
             width: 60,
             height: 60,
             child: Center(
-              child: Text(keyCalculator),
+              child: Text(keyCalculator), // This allow request a text
             ),
           ),
         )

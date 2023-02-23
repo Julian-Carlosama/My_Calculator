@@ -8,26 +8,28 @@ class SpecialsButtons extends StatelessWidget {
   SpecialsButtons({super.key, required this.operators});
 
   final String operators;
-  final TextEditingController controller = showCharacters;
+
+  // Controller that gets user input from keyboard.
+  final TextEditingController dataObtained = showInputCharacters;
   // Text controller
   //final TextEditingController controller = TextEditingController();
 
   @override
   Widget build(BuildContext context) {
     return BaseButton(
-      keyCalculator: operators,
+      //keyCalculator: operators,
       btnColor: const Color.fromARGB(255, 255, 123, 0),
       onPress: (() {
         if (operators == 'AC') {
-          controller.clear();
-          resultData.clear();
+          dataObtained.clear();
+          opResult.clear();
         } else if (operators == '=') {
-          Expression result = Parser().parse(controller.text);
-          resultData.text = result.toString();
+          Expression result = Parser().parse(dataObtained.text); 
+          opResult.text = result.toString(); // Aquí hay que cambiar para qie el valor del resultado sea verdadero
         } else {
-          controller.text += operators;
+          dataObtained.text += operators;
         }
-        showCharacters.text = controller.text;
+        showInputCharacters.text = dataObtained.text;
       }),
     );
   }
