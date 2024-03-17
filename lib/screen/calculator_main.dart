@@ -1,7 +1,9 @@
-import 'package:calculator_flutter/butoms/base_button.dart';
-import 'package:calculator_flutter/butoms/numeric_button.dart';
-import 'package:calculator_flutter/butoms/specials_buttons.dart';
 import 'package:flutter/material.dart';
+import 'package:calculator_flutter/butoms/math_opera_button.dart';
+import 'package:calculator_flutter/butoms/numeric_operation_button.dart';
+import 'package:calculator_flutter/butoms/base_button.dart';
+import 'package:calculator_flutter/butoms/specials_buttons.dart';
+
 
 // Input and output controllers
 TextEditingController showInputCharacters = TextEditingController();
@@ -36,8 +38,8 @@ class _CalculatorMainState extends State<CalculatorMain> {
         body: Container(
           decoration: const BoxDecoration(
               gradient: LinearGradient(
-                  colors: [Colors.black, Colors.grey, Colors.white],
-                  stops: [0.3, 0.6, 0.9],
+                  colors: [Color.fromRGBO(14, 14, 14, 1), Color.fromRGBO(59, 59, 59, 50), Color.fromRGBO(82, 82, 82, 100)],
+                  stops: [0.5, 0.6, 0.9],
                   begin: FractionalOffset.topRight,
                   end: FractionalOffset.bottomLeft)),
           child: Column(
@@ -94,37 +96,34 @@ class _CalculatorMainState extends State<CalculatorMain> {
               // This block of code  is the  numeric  and operator keyboard
               Row(mainAxisAlignment: MainAxisAlignment.spaceEvenly, children: [
                 SpecialsButtons(operators: 'AC'),
-                SpecialsButtons(operators: 'e'),
+                SpecialsButtons(operators: 'CE'),
                 SpecialsButtons(operators: '%'),
                 SpecialsButtons(operators: '/'),
               ]),
               Row(mainAxisAlignment: MainAxisAlignment.spaceEvenly, children: [
-                BaseButton(keyCalculator: '7',onPress: () => showInputCharacters.text += '7'),
-                BaseButton(keyCalculator: '8', onPress: () => showInputCharacters.text += '8'),
-                BaseButton(keyCalculator: '9', onPress: () => showInputCharacters.text += '9'),
+                NumericButton(simbolMath: '7'),
+                NumericButton(simbolMath: '8'),
+                NumericButton(simbolMath: '9'),
                 SpecialsButtons(operators: '*'),
               ]),
               Row(mainAxisAlignment: MainAxisAlignment.spaceEvenly, children: [
-                BaseButton(keyCalculator: '4', onPress: () => showInputCharacters.text += '4'),
-                BaseButton(keyCalculator: '5', onPress: () => showInputCharacters.text += '5'),
-                BaseButton(keyCalculator: '6', onPress: () => showInputCharacters.text += '6'),
-                SpecialsButtons(
-                  operators: '-',
-                ),
+                NumericButton(simbolMath: '4'),
+                NumericButton(simbolMath: '5'),
+                NumericButton(simbolMath: '6'),
+                SpecialsButtons(operators: '-'),
+              ]),
+              Row(mainAxisAlignment: MainAxisAlignment.spaceEvenly, children: [               
+                NumericButton(simbolMath: '1'),
+                NumericButton(simbolMath: '2'),
+                NumericButton(simbolMath: '3'),
+                NumericButton(simbolMath: '+'),
               ]),
               Row(mainAxisAlignment: MainAxisAlignment.spaceEvenly, children: [
-                BaseButton(keyCalculator: '1', onPress: () => showInputCharacters.text = (int.parse('${showInputCharacters.text}1')).toString()),
-                BaseButton(keyCalculator: '2', onPress: () => showInputCharacters.text = (int.parse('${showInputCharacters.text}2')).toString()),
-                BaseButton(keyCalculator: '3', onPress: () => showInputCharacters.text = (int.parse('${showInputCharacters.text}3')).toString()),
-                SpecialsButtons(operators: '+'),
-              ]),
-              Row(mainAxisAlignment: MainAxisAlignment.spaceEvenly, children: [
-                NumericButton(valueNumberBtn: '0'),
-                //BaseButton(keyCalculator: '0',onPress: () => showInputCharacters.text += '0'),
+                //NumericButton(valueNumberBtn: '0'),
+                BaseButton(keyCalculator: '0', onPress: () => showInputCharacters.text += '0'),
                 BaseButton(keyCalculator: '00', onPress: () => showInputCharacters.text += '00'),
-                //SpecialsButtons(operators: ','),
-                SpecialsButtons(operators: '.'),
-                SpecialsButtons(operators: '='),
+                SpecialsButtons(operators: ','),
+                MathOperatorButton(operator: '=')
               ]),
             ],
           ),
