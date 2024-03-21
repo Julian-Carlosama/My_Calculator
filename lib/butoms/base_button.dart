@@ -3,14 +3,17 @@ import 'package:flutter/material.dart';
 class BaseButton extends StatelessWidget {
   const BaseButton(
       {Key? key,
-      this.btnColor = const Color.fromRGBO(37, 37, 37, 10),
+      //this.btnColor = const Color.fromRGBO(37, 37, 37, 10),
+      this.btnColor = const Color.fromRGBO(117, 0, 233, 38),
       this.textColor = Colors.white,
+      this.fontSize = 35,
       this.keyCalculator = '',
       required this.onPress})
       : super(key: key);
 
   final Color btnColor;
   final Color textColor;
+  final double fontSize;
   final String keyCalculator;
   final VoidCallback onPress;
 
@@ -28,16 +31,14 @@ class BaseButton extends StatelessWidget {
             padding:
                 MaterialStateProperty.all<EdgeInsets>(const EdgeInsets.all(4)),
             textStyle: MaterialStateProperty.all<TextStyle>(
-                TextStyle(fontSize: 38, color: textColor)),
+                TextStyle(fontSize: fontSize, color: textColor)),
           ),
           child: SizedBox(
             width: 60,
             height: 60,
             child: Center(
-              child: Text(
-                keyCalculator, // This allow request a text
-                style: TextStyle(color: textColor)
-                ), 
+              child: Text(keyCalculator, // This allow request a text
+                  style: TextStyle(color: textColor, fontSize: fontSize)),
             ),
           ),
         ));
