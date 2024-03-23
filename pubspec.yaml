@@ -29,6 +29,7 @@ environment:
 dependencies:
   flutter:
     sdk: flutter
+  font_awesome_flutter: ^10.7.0
 
 
   # The following adds the Cupertino Icons font to your application.
@@ -83,6 +84,7 @@ flutter:
          - asset: assets/fonts/orbitron/Orbitron-Medium.ttf
          - asset: assets/fonts/orbitron/Orbitron-Regular.ttf
          - asset: assets/fonts/orbitron/Orbitron-SemiBold.ttf
+
   #         style: italic
   #   - family: Trajan Pro
   #     fonts:

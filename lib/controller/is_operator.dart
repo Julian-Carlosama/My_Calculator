@@ -3,5 +3,6 @@ bool isOperator(String character) {
   return character == '+' ||
       character == '-' ||
       character == '*' ||
-      character == '/';
+      character == '/' ||
+      character == '.';
 }

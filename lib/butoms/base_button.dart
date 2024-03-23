@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 
 class BaseButton extends StatelessWidget {
   const BaseButton(
@@ -8,19 +9,24 @@ class BaseButton extends StatelessWidget {
       this.textColor = Colors.white,
       this.fontSize = 35,
       this.keyCalculator = '',
+      this.icon,
       required this.onPress})
       : super(key: key);
 
   final Color btnColor;
   final Color textColor;
   final double fontSize;
-  final String keyCalculator;
+  final String? keyCalculator;
+  final FaIcon? icon;
   final VoidCallback onPress;
 
   @override
   Widget build(BuildContext context) {
+    var widthScreen = MediaQuery.of(context).size.width;
+    var heightScreen = MediaQuery.of(context).size.height;
+
     return Container(
-        padding: const EdgeInsets.only(top: 10, bottom: 10),
+        padding: const EdgeInsets.only(top: 5, bottom: 5),
         // Code that creates the basics components of the Button
         child: ElevatedButton(
           onPressed: onPress,
@@ -34,11 +40,16 @@ class BaseButton extends StatelessWidget {
                 TextStyle(fontSize: fontSize, color: textColor)),
           ),
           child: SizedBox(
-            width: 60,
-            height: 60,
+            width: widthScreen * 0.18,
+            height: heightScreen * 0.1,
             child: Center(
-              child: Text(keyCalculator, // This allow request a text
-                  style: TextStyle(color: textColor, fontSize: fontSize)),
+              child:
+                  Row(mainAxisAlignment: MainAxisAlignment.center, children: [
+                if (icon != null) icon!,
+                if (icon == null && keyCalculator != null)
+                  Text(keyCalculator!,
+                      style: TextStyle(color: textColor, fontSize: fontSize))
+              ]),
             ),
           ),
         ));
