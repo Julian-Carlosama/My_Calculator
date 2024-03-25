@@ -1,4 +1,5 @@
 import 'package:calculator_flutter/controller/is_number.dart';
+import 'package:calculator_flutter/controller/is_operator.dart';
 import 'package:flutter/material.dart';
 import 'package:calculator_flutter/butoms/math_opera_button.dart';
 import 'package:calculator_flutter/butoms/numeric_button.dart';
@@ -38,8 +39,14 @@ class _CalculatorMainState extends State<CalculatorMain> {
           // Delete first text character
           showInputCharacters.text = gText.substring(1);
         }
-
-        //if (gText[gText - 1] == '%') {}
+        /*
+        for (int i = 0; i < gText.length - 1; i++) {
+          if (isOperator(gText[i]) && isNumber(gText[i + 1])) {
+            showInputCharacters.text = gText;
+          } else {
+            showInputCharacters.text = 'Error';
+          }
+        }*/
       }
     });
     opResult.addListener(() {});

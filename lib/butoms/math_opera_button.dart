@@ -34,7 +34,6 @@ class MathOperatorButton extends StatelessWidget {
           bool endsWithPercentage = dataObtained.text.endsWith('%');
           bool endsOperator =
               isOperator(dataObtained.text[dataObtained.text.length - 1]);
-          var finalResult;
 
           //Calculate if the math expression ends with'%' operator
           if (endsWithPercentage) {
@@ -46,6 +45,7 @@ class MathOperatorButton extends StatelessWidget {
                 getExpre.evaluate(EvaluationType.REAL, cm).toString();
             double percentaje = (double.parse(finalExpre) / 100);
 
+            //Check result ends with integer or double
             if (percentaje % 1 == 0) {
               opResult.text = percentaje.toInt().toString();
             } else {
@@ -62,6 +62,7 @@ class MathOperatorButton extends StatelessWidget {
             ContextModel cm = ContextModel();
             double finalResult = result.evaluate(EvaluationType.REAL, cm);
 
+            //Check result ends with integer or double
             if (finalResult % 1 == 0) {
               opResult.text = finalResult.toInt().toString();
             } else {
