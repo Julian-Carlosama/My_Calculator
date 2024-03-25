@@ -38,6 +38,8 @@ class _CalculatorMainState extends State<CalculatorMain> {
           // Delete first text character
           showInputCharacters.text = gText.substring(1);
         }
+
+        //if (gText[gText - 1] == '%') {}
       }
     });
     opResult.addListener(() {});

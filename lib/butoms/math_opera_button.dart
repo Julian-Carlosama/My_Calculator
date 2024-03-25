@@ -18,38 +18,55 @@ class MathOperatorButton extends StatelessWidget {
   Widget build(BuildContext context) {
     return BaseButton(
       keyCalculator: operators,
-      //textColor: const Color.fromARGB(255, 5, 253, 38),
       textColor: const Color.fromARGB(156, 238, 238, 238),
-      //btnColor: const Color.fromRGBO(63, 24, 175, 38),
       btnColor: const Color.fromARGB(218, 56, 10, 193),
       fontSize: 45,
       icon: icons,
-      //onPress: () => mathOpNumb(dataObtained),
       onPress: () {
         if (isOperator(operators)) {
           oper.text += operators;
           dataObtained.text = oper.text;
         }
+
         //Code that allow do calculate when User check the '=' button
         if (dataObtained.text.isNotEmpty && operators == '=') {
-          
-          bool endsOperator = isOperator(dataObtained.text[dataObtained.text.length - 1]);
+          String getExpress = dataObtained.text;
           bool endsWithPercentage = dataObtained.text.endsWith('%');
+          bool endsOperator =
+              isOperator(dataObtained.text[dataObtained.text.length - 1]);
+          var finalResult;
 
+          //Calculate if the math expression ends with'%' operator
           if (endsWithPercentage) {
-            Parser parser = Parser();
-            Expression result = parser.parse(dataObtained.text);
+            getExpress = getExpress.replaceAll('%', '');
+            Parser pr = Parser();
+            Expression getExpre = pr.parse(getExpress);
             ContextModel cm = ContextModel();
-            opResult.text = result.evaluate(EvaluationType.REAL, cm).toString();
+            String finalExpre =
+                getExpre.evaluate(EvaluationType.REAL, cm).toString();
+            double percentaje = (double.parse(finalExpre) / 100);
+
+            if (percentaje % 1 == 0) {
+              opResult.text = percentaje.toInt().toString();
+            } else {
+              opResult.text = percentaje.toString();
+            }
           }
-          
+
+          //Return empty value if the espression ends with a math operator exept the '%' opearor
           if (endsOperator) {
             opResult.text += '';
           } else {
             Parser parser = Parser();
-            Expression result = parser.parse(dataObtained.text);
+            Expression result = parser.parse(getExpress);
             ContextModel cm = ContextModel();
-            opResult.text = result.evaluate(EvaluationType.REAL, cm).toString();
+            double finalResult = result.evaluate(EvaluationType.REAL, cm);
+
+            if (finalResult % 1 == 0) {
+              opResult.text = finalResult.toInt().toString();
+            } else {
+              opResult.text = finalResult.toString();
+            }
           }
         }
       },
