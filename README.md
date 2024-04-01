@@ -11,9 +11,16 @@ This tool has basic math functions like: sum, sub, mul, div and percentage.
 To install and run this, you must:
 
 <input type="text" value="https://github.com/Julian-Carlosama/my_calculator.git" id="enlaceInput" readonly>
-<button onclick="copiarEnlace()">Copiar enlace</button>
+<button onclick="copyLink()">https://github.com/Julian-Carlosama/my_calculator.git</button>
 
-
+<script>
+function copyLink() {
+  var enlaceInput = document.getElementById("enlaceInput");
+  enlaceInput.select();
+  document.execCommand("copy");
+  alert("¡Link copied to clipboard!");
+}
+</script>
 
 
 A few resources to get you started if this is your first Flutter project:
