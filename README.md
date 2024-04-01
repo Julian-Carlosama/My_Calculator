@@ -27,7 +27,7 @@ flutter run
 
 <img align="center" src="https://github.com/Julian-Carlosama/my_calculator/blob/main/screens/xsmart.png" width="200" height="400">
 
-<img align="right" src="https://github.com/Julian-Carlosama/my_calculator/blob/main/screens/tablet10inch.png" width="200" height="400">
+<img align="left" src="https://github.com/Julian-Carlosama/my_calculator/blob/main/screens/tablet10inch.png" width="200" height="400">
 
 
 
