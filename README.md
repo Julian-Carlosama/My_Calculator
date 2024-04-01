@@ -22,16 +22,13 @@ flutter run
 ````
 ## Pictures
 
-![minipic](img/https://github.com/Julian-Carlosama/my_calculator/blob/main/screens/ImageCel1.png)
-![minipic](https://github.com/Julian-Carlosama/my_calculator/blob/main/screens/xsmart.png)
-
 <style type="text/css">
     img {
         width: 250px;
     }
 </style>
 <div class="container_pictures">
-    <img src=" " width="300" height="400">
+    <img src="https://github.com/Julian-Carlosama/my_calculator/blob/main/screens/ImageCel1.png" width="300" height="400">
 
     <img src="https://github.com/Julian-Carlosama/my_calculator/blob/main/screens/xsmart.png" width="300" height="400">
     <img src="https://github.com/Julian-Carlosama/my_calculator/blob/main/screens/tablet10inch.png" width="300" height="400">
