@@ -23,11 +23,11 @@ flutter run
 ## Pictures
 
 
-<img align="left" src="https://github.com/Julian-Carlosama/my_calculator/blob/main/screens/ImageCel1.png" width="240" height="400">
+<img align="left" src="https://github.com/Julian-Carlosama/my_calculator/blob/main/screens/ImageCel1.png" width="250" height="400">
 
-<img align="center" src="https://github.com/Julian-Carlosama/my_calculator/blob/main/screens/xsmart.png" width="240" height="400">
+<img align="center" src="https://github.com/Julian-Carlosama/my_calculator/blob/main/screens/xsmart.png" width="250" height="400">
 
-<img align="right" src="https://github.com/Julian-Carlosama/my_calculator/blob/main/screens/tablet10inch.png" width="240" height="300">
+<img align="right" src="https://github.com/Julian-Carlosama/my_calculator/blob/main/screens/tablet10inch.png" width="250" height="400">
 
 
 
