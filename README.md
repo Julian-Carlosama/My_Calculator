@@ -6,15 +6,20 @@ This is a simple project in Flutter that allows you to create a calculator.
 
 This tool has basic math functions like: sum, sub, mul, div and percentage.
 
-### Install and use
+### Install
 
 To install and run this, you must:
 
-[Get project:][https://github.com/Julian-Carlosama/my_calculator.git]
+```bash
+https://github.com/Julian-Carlosama/my_calculator.git
+````
+### Run 
+```bash
+cd my_calculator
 
-then run this:
-
-<input type="text" id="myReadOnlyField" value="flutter run" readonly>
+Then:
+flutter run
+````
 
 
 
