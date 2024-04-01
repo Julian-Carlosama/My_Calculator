@@ -22,7 +22,7 @@ flutter run
 ````
 ## Pictures
 
-![minipic](https://github.com/Julian-Carlosama/my_calculator/blob/main/screens/ImageCel1.png)
+![minipic](img/https://github.com/Julian-Carlosama/my_calculator/blob/main/screens/ImageCel1.png)
 ![minipic](https://github.com/Julian-Carlosama/my_calculator/blob/main/screens/xsmart.png)
 
 <style type="text/css">
