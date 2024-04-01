@@ -1,10 +1,17 @@
-# calculator_flutter
+# Calculator_flutter
 
-A new Flutter project.
+This is a simple project in Flutter that allows you to create a calculator.
 
-## Getting Started
+## Some description
 
-This project is a starting point for a Flutter application.
+This tool has basic math functions like: sum, sub, mul, div and percentage.
+
+### Install and use
+
+To install and run this, you must:
+[https://github.com/Julian-Carlosama/my_calculator.git]
+
+
 
 A few resources to get you started if this is your first Flutter project:
 
