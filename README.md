@@ -9,7 +9,10 @@ This tool has basic math functions like: sum, sub, mul, div and percentage.
 ### Install and use
 
 To install and run this, you must:
-[https://github.com/Julian-Carlosama/my_calculator.git]
+
+<input type="text" value="https://github.com/Julian-Carlosama/my_calculator.git" id="enlaceInput" readonly>
+<button onclick="copiarEnlace()">Copiar enlace</button>
+
 
 
 
