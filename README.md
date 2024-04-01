@@ -25,6 +25,8 @@ flutter run
 <div style="display:flex; align-items: center;">
     <div style="flex:1">
         <img width="260" height="400" src="https://github.com/Julian-Carlosama/my_calculator/blob/main/screens/ImageCel1.png">
+       <img width="260" height="400" src="https://github.com/Julian-Carlosama/my_calculator/blob/main/screens/xsmart.png">
+
     </div>
     <div style="flex:1;padding-left:10px;">
        <img width="260" height="400" src="https://github.com/Julian-Carlosama/my_calculator/blob/main/screens/xsmart.png">
