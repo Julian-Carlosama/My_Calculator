@@ -23,6 +23,7 @@ flutter run
 ## Pictures
 
 ![minipic](https://github.com/Julian-Carlosama/my_calculator/blob/main/screens/ImageCel1.png)
+![minipic](https://github.com/Julian-Carlosama/my_calculator/blob/main/screens/xsmart.png)
 img[alt="minipic"] { 
   max-width:  300px; 
   display: flex;
