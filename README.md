@@ -21,14 +21,14 @@ Then execute this command in your terminal:
 flutter run
 ````
 ## Pictures
-<style>
-    .container_pictures {
-        display: flex;
-    }
-</style>
 
+![minipic](https://github.com/Julian-Carlosama/my_calculator/blob/main/screens/ImageCel1.png)
+img[alt="minipic"] { 
+  max-width:  300px; 
+  display: flex;
+}
 <div class="container_pictures">
-    <img src="https://github.com/Julian-Carlosama/my_calculator/blob/main/screens/ImageCel1.png " width="300" height="400">
+    <img src=" " width="300" height="400">
 
     <img src="https://github.com/Julian-Carlosama/my_calculator/blob/main/screens/xsmart.png" width="300" height="400">
     <img src="https://github.com/Julian-Carlosama/my_calculator/blob/main/screens/tablet10inch.png" width="300" height="400">
