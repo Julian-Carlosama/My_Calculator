@@ -1,9 +1,17 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.example.calculator_flutter">
+    package="package_calculator.calculator">
    <application
         android:label="My Calculator"
         android:name="${applicationName}"
         android:icon="@mipmap/ic_launcher">
+        <!--activity 
+            android:name=".SplashActivity"
+            android:theme="@style/Splash_theme">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity-->
         <activity
             android:name=".MainActivity"
             android:exported="true"

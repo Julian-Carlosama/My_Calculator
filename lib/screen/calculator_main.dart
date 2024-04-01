@@ -1,5 +1,5 @@
 import 'package:calculator_flutter/controller/is_number.dart';
-import 'package:calculator_flutter/controller/is_operator.dart';
+//import 'package:calculator_flutter/controller/is_operator.dart';
 import 'package:flutter/material.dart';
 import 'package:calculator_flutter/butoms/math_opera_button.dart';
 import 'package:calculator_flutter/butoms/numeric_button.dart';
@@ -12,9 +12,8 @@ TextEditingController showInputCharacters = TextEditingController();
 TextEditingController opResult = TextEditingController();
 
 class CalculatorMain extends StatefulWidget {
-  const CalculatorMain({super.key, required this.title});
+  const CalculatorMain({super.key});
 
-  final String title;
 
   @override
   State<CalculatorMain> createState() => _CalculatorMainState();
@@ -68,7 +67,7 @@ class _CalculatorMainState extends State<CalculatorMain> {
         height: heightS,
         //width: double.infinity,
         decoration: const BoxDecoration(
-            gradient: LinearGradient(
+          gradient: LinearGradient(
           colors: [Color(0xff0e0e0e), Color(0xff3b3b3b), Color(0xff525252)],
           stops: [0.25, 0.75, 0.88],
           begin: Alignment.topCenter,
@@ -87,9 +86,9 @@ class _CalculatorMainState extends State<CalculatorMain> {
                 decoration: InputDecoration.collapsed(
                   hintText: '0', // Show the initial character
                   hintStyle: TextStyle(
-                      fontSize: show0,
-                      fontFamily: 'Orbitron',
-                      color: const Color.fromARGB(255, 255, 255, 255)),
+                    fontSize: show0,
+                    fontFamily: 'Orbitron',
+                    color: const Color.fromARGB(255, 255, 255, 255)),
                 ),
                 style: TextStyle(
                   fontSize: showIChFontSize,
@@ -111,9 +110,9 @@ class _CalculatorMainState extends State<CalculatorMain> {
                 decoration: const InputDecoration.collapsed(
                     hintText: 'Result', // Shows the text 'Result' initial.
                     hintStyle: TextStyle(
-                        fontSize: 52,
-                        fontFamily: 'Orbitron',
-                        color: Color.fromARGB(255, 255, 255, 255))),
+                      fontSize: 52,
+                      fontFamily: 'Orbitron',
+                      color: Color.fromARGB(255, 255, 255, 255))),
                 textInputAction: TextInputAction.none,
                 //keyboardType: TextInputType.,
                 style: const TextStyle(

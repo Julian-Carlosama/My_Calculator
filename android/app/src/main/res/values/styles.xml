@@ -15,4 +15,9 @@
     <style name="NormalTheme" parent="@android:style/Theme.Light.NoTitleBar">
         <item name="android:windowBackground">?android:colorBackground</item>
     </style>
+
+    <!--style name="SplashTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-Personaliza el fondo de la actividad de splash ->
+        <item name="android:windowBackground">@drawable/splash_background</item>
+    </style-->
 </resources>

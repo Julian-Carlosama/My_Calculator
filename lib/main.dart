@@ -12,10 +12,7 @@ class Calculator extends StatelessWidget {
     return const MaterialApp(
       debugShowCheckedModeBanner: false,
       title: "My Calculator",
-      //home: SimpleCalculator(
-      home: CalculatorMain(
-        title: 'My Calculator',
-      ),
+      home: CalculatorMain(),
     );
   }
 }
