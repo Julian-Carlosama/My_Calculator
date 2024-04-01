@@ -21,10 +21,18 @@ Then execute this command in your terminal:
 flutter run
 ````
 ## Pictures
-<img src="https://github.com/Julian-Carlosama/my_calculator/blob/main/screens/ImageCel1.png " width="300" height="400">
+<div class="container_pictures">
+    <img src="https://github.com/Julian-Carlosama/my_calculator/blob/main/screens/ImageCel1.png " width="300" height="400">
 
-<img src="https://github.com/Julian-Carlosama/my_calculator/blob/main/screens/xsmart.png" width="300" height="400">
-<img src="https://github.com/Julian-Carlosama/my_calculator/blob/main/screens/tablet10inch.png" width="300" height="400">
+    <img src="https://github.com/Julian-Carlosama/my_calculator/blob/main/screens/xsmart.png" width="300" height="400">
+    <img src="https://github.com/Julian-Carlosama/my_calculator/blob/main/screens/tablet10inch.png" width="300" height="400">
+</div>
+
+<style>
+.container_pictures {
+    display: flex;
+}
+</style>
 
 
 ## Author
