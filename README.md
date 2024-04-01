@@ -21,9 +21,9 @@ Then execute this command in your terminal:
 flutter run
 ````
 ## Pictures
-![Main screen](https://github.com/Julian-Carlosama/my_calculator/blob/main/screens/ImageCel1.png = 300x200)
-![Main screen](https://github.com/Julian-Carlosama/my_calculator/blob/main/screens/xsmart.png)
-![Main screen](https://github.com/Julian-Carlosama/my_calculator/blob/main/screens/tablet10inch.png)
+![Main screen](https://github.com/Julian-Carlosama/my_calculator/blob/main/screens/ImageCel1.png =300x200)
+![Main screen](https://github.com/Julian-Carlosama/my_calculator/blob/main/screens/xsmart.png =300x200)
+![Main screen](https://github.com/Julian-Carlosama/my_calculator/blob/main/screens/tablet10inch.png =300x200)
 
 
 ## Author
