@@ -25,7 +25,7 @@ flutter run
 ![minipic](https://github.com/Julian-Carlosama/my_calculator/blob/main/screens/ImageCel1.png)
 ![minipic](https://github.com/Julian-Carlosama/my_calculator/blob/main/screens/xsmart.png)
 img[alt="minipic"] { 
-  max-width:  300px; 
+  max-width:  200px; 
   display: flex;
 }
 <div class="container_pictures">
