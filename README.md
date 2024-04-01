@@ -22,15 +22,19 @@ flutter run
 ````
 ## Pictures
 
+<div style="display:flex; align-items: center;">
+    <div style="flex:1">
+        <img src="https://github.com/Julian-Carlosama/my_calculator/blob/main/screens/ImageCel1.png">
+    </div>
+    <div style="flex:1;padding-left:10px;">
+       <img align="center" src="https://github.com/Julian-Carlosama/my_calculator/blob/main/screens/xsmart.png">
+    </div>   
+</div>
 
-<img align="left" src="https://github.com/Julian-Carlosama/my_calculator/blob/main/screens/ImageCel1.png" width="260" height="400">
 
-<img align="center" src="https://github.com/Julian-Carlosama/my_calculator/blob/main/screens/xsmart.png" width="260" height="400">
+
 
 <img align="right" src="https://github.com/Julian-Carlosama/my_calculator/blob/main/screens/tablet10inch.png" width="260" height="400">
-
-
-
 
 
 ## Author
