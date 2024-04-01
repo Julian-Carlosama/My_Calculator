@@ -17,9 +17,11 @@ https://github.com/Julian-Carlosama/my_calculator.git
 ```bash
 cd my_calculator
 
-Then:
+Then execute this command in your terminal:
 flutter run
 ````
+## Pictures
+![Main screen]()
 
 
 
