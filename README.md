@@ -31,14 +31,10 @@ flutter run
 
     </div>
     <div style="flex:1;padding-left:10px;">
-       <img width="260" height="400" src="https://github.com/Julian-Carlosama/my_calculator/blob/main/screens/xsmart.png">
+       <img width="260" height="400" src="https://github.com/Julian-Carlosama/my_calculator/blob/main/screens/tablet10inch.png">
     </div>   
 </div>
 
-
-
-
-<img align="right" src="https://github.com/Julian-Carlosama/my_calculator/blob/main/screens/tablet10inch.png" width="260" height="400">
 
 
 ## Author
